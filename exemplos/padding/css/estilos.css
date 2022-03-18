@@ -1,0 +1,12 @@
+body {
+  font-size: 40px;
+}
+
+p {
+  text-align: justify;
+  width: 500px;
+  border: 3px solid aqua;
+  background-color: yellow;
+
+  padding: 20px 50px;
+}

@@ -1,0 +1,43 @@
+/* Seletores de filhos diretos */
+
+/* article > .importante {
+  color: red;
+} */
+
+/* article > .importante > strong {
+  color: red;
+} */
+
+article .importante > strong {
+  color: red;
+}
+
+/* Seletores de filhos diretos */
+
+/* Seletores descendentes */
+
+/*
+
+.missao strong {
+  color: red;
+}
+article strong {
+  color: blue;
+}
+
+article .missao strong {
+  color: green;
+}
+*/
+
+/* Seletores descendentes */
+
+/* #titulo,
+.missao {
+  font-family: Arial;
+}
+
+.introducao,
+.missao {
+  color: red;
+} */
