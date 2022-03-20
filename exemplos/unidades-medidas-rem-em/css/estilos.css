@@ -1,0 +1,30 @@
+/* EM relativo ao pai */
+/*  REM relativo ao documento */
+
+.texto {
+  font-size: 2rem; /*32px*/
+}
+
+.texto h1 {
+  font-size: 3em;
+}
+
+.texto p {
+  padding: 0.5em;
+  margin-right: 3em;
+  border: 0.5em solid black; /*Relativo ao fontsize do próprio elemento*/
+
+  font-size: 2em; /*64px*/
+}
+
+.texto p span {
+  font-size: 0.5em; /*32px*/
+}
+
+.comentarios {
+  font-size: 0.5rem; /* 16px*/
+}
+
+.comentarios p {
+  font-size: 2em;
+}
