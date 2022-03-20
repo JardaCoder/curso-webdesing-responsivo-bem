@@ -1,0 +1,23 @@
+body {
+  font-size: 32px;
+}
+
+header#cabecalho h1.logo {
+  color: yellow;
+}
+
+header#cabecalho .logo {
+  color: purple;
+}
+
+#cabecalho .logo {
+  color: red;
+}
+
+header .logo {
+  color: green;
+}
+
+.logo {
+  color: blue;
+}

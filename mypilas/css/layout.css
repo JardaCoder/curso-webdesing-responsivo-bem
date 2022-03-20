@@ -1,0 +1,16 @@
+/* ---- HEADER ---- */
+
+.layout-header {
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+}
+
+.layout-header img {
+  margin-top: 12px;
+}
+
+/* ---- PLANOS ---- */
+
+.layout-plans {
+  padding: 80px 0;
+}
