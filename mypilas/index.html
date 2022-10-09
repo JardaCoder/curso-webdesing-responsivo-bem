@@ -14,9 +14,30 @@
     <link rel="stylesheet" href="css/components.css" />
   </head>
   <body>
-    <header class="layout-header">
+    <header class="layout-header layout-header--home">
       <div class="container">
-        <img src="assets/logo.png" width="100" height="35" alt="MyPilas" />
+        <nav class="navigation">
+          <img src="assets/logo.png" width="100" height="35" alt="MyPilas" />
+
+          <div class="navigation__menu">
+            <button class="hamburguer-button js-menu-button"></button>
+
+            <ul class="menu js-menu">
+              <li class="menu__item">
+                <a href="#">Como funciona</a>
+              </li>
+              <li class="menu__item">
+                <a href="#plans">Planos e preços</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">Contato</a>
+              </li>
+              <li class="menu__item menu__item--button">
+                <a href="#" class="button button--login">Login</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -32,6 +53,22 @@
         </div>
       </div>
     </section>
+
+    <div class="layout-testimonial">
+      <div class="container">
+        <div class="testimonial">
+          <blockquote>
+            Eu tinha perdido totalmente o controle da minha empresa. Depois que comecei a usar o MyPilas, me sinto muito
+            mais organizado e confiante no futuro.
+          </blockquote>
+
+          <div class="testimonial__author">
+            <img src="./assets/joao.jpg" height="180" width="180" alt="João da Silva" />
+            <p>João da Silva</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="layout-plans" id="plans">
       <div class="container">
@@ -50,13 +87,13 @@
               </ul>
 
               <footer class="plan__footer">
-                <a class="button button--sign" href="assine.html">Assinar</a>
+                <a class="button button--sign" href="sigin.html">Assinar</a>
               </footer>
             </article>
           </div>
 
           <div class="col-sm-4">
-            <article class="plan">
+            <article class="plan plan--most-popular">
               <h2 class="plan__header">Micro</h2>
               <div class="plan__price">R$89/mês</div>
 
@@ -69,12 +106,12 @@
               </ul>
 
               <footer class="plan__footer">
-                <a class="button button--sign" href="assine.html">Assinar</a>
+                <a class="button button--sign" href="sigin.html">Assinar</a>
               </footer>
             </article>
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-sm-4 last-column">
             <article class="plan">
               <h2 class="plan__header">Pequena</h2>
               <div class="plan__price">R$99/mês</div>
@@ -88,12 +125,20 @@
               </ul>
 
               <footer class="plan__footer">
-                <a class="button button--sign" href="assine.html">Assinar</a>
+                <a class="button button--sign" href="sigin.html">Assinar</a>
               </footer>
             </article>
           </div>
         </div>
       </div>
     </div>
+
+    <footer class="layout-footer">
+      <div class="container">
+        <p>&copy; MyPilas. Todos os direitos reservados</p>
+      </div>
+    </footer>
+
+    <script src="./javascript/functions.js"></script>
   </body>
 </html>

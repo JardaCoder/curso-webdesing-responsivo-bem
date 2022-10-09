@@ -1,9 +1,27 @@
 /* ---- PLANOS ---- */
 .plan {
+  position: relative;
+
   padding: 10px;
   border: 1px solid #95a4a5;
 
   font-size: 1.4rem; /* 14px */
+}
+
+.plan--most-popular::after {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+
+  padding: 0 10px;
+
+  background-color: #c20303;
+  color: #fff;
+
+  font-size: 0.7142em;
+  line-height: 2.5;
+
+  content: "Mais popular";
 }
 
 .plan:hover {
@@ -48,7 +66,7 @@
   text-align: center;
 }
 
-/* ---- PLANOS ---- */
+/* ---- Button ---- */
 
 .button {
   padding: 0.8em 1.2em;
@@ -58,6 +76,8 @@
   background-color: #bbb;
   color: #fff;
 
+  line-height: normal;
+  font-size: 1em;
   text-decoration: none;
 }
 
@@ -72,12 +92,15 @@
   transition: 300ms linear;
 }
 
-.button--sign {
+.button--sign,
+.button--login {
   background-color: #127d00;
 }
 
 .button--sign:hover,
-.button--sign:focus {
+.button--login:hover,
+.button--sign:focus,
+.button--login:focus {
   background-color: #fff;
   color: #127d00;
   border: 1px solid #127d00;
@@ -130,4 +153,180 @@
 
     font-size: 2.2rem;
   }
+}
+
+/* ---- Depoimento ---- */
+
+.testimonial {
+  font-size: 2.2rem;
+}
+
+@media (min-width: 992px) {
+  .testimonial {
+    padding: 0 15%;
+
+    font-size: 2.8rem;
+  }
+}
+
+.testimonial > blockquote {
+  position: relative;
+
+  margin: 0;
+  padding: 0 60px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.testimonial > blockquote::before {
+  position: absolute;
+  top: -0.35em;
+  left: 0;
+  opacity: 0.8;
+
+  color: #ccc;
+
+  font-size: 8em;
+
+  content: "\201C";
+}
+
+.testimonial__author {
+  margin-top: 40px;
+
+  text-align: center;
+  font-size: 0.7272em;
+}
+
+.testimonial__author > img {
+  border-radius: 50%;
+}
+
+.testimonial__author > p {
+  margin-top: 10px;
+}
+
+/* ---- navegação ---- */
+
+.navigation {
+}
+
+.navigation__menu {
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+/* ---- Hambuguer menu ---- */
+.hamburguer-button {
+  width: 24px;
+  height: 24px;
+  border: 0;
+
+  background: none;
+  background-image: url("../assets/bars.png");
+
+  outline: none;
+}
+
+@media (min-width: 992px) {
+  .hamburguer-button {
+    display: none;
+  }
+}
+
+/* ---- Menu ---- */
+
+.menu {
+  margin: 0;
+
+  font-size: 1.4rem;
+
+  list-style: none;
+}
+
+@media (max-width: 991px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+
+    width: 200px;
+    padding: 20px;
+    border-right: 1px solid #eee;
+
+    background-color: #fbfbfb;
+  }
+
+  .menu--active {
+    display: block;
+  }
+
+  .menu-item {
+    display: block;
+
+    line-height: 3;
+  }
+
+  .menu__item--button {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu__item {
+    display: inline-block;
+    padding-right: 20px;
+  }
+
+  .menu__item:last-of-type {
+    padding-right: 0px;
+  }
+}
+
+/*--------------------*\
+  TITULO-FORMULARIO
+\*--------------------*/
+.form-title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  border-bottom: 1px solid #ccc;
+
+  font-size: 2.6rem;
+  font-weight: normal;
+  color: #004b86;
+}
+
+/*--------------------*\
+  GRUPO-ENTRADA
+\*--------------------*/
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group > label {
+  display: block;
+
+  font-weight: bold;
+}
+
+/*--------------------*\
+  CAMPO
+\*--------------------*/
+.field {
+  display: block;
+  width: 100%;
+  height: 2.8em;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  background-color: #fff;
+
+  font-size: 1.4rem;
+  outline-color: #004b86;
 }
